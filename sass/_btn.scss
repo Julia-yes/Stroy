@@ -1,0 +1,14 @@
+@use '_variables';
+
+.btn {
+    background-color: transparent;
+    border: 1px solid variables.$border_color;
+    border-radius: 15px;
+    padding: 10px 20px;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.035em;
+
+
+}

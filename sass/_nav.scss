@@ -1,0 +1,30 @@
+@use '_variables';
+
+.nav {
+    height: 70px;
+    background-color: variables.$main_color;
+    color: white;
+    line-height: 70px;
+    
+
+    &__list {
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0 30px;
+        padding: 0;
+    }
+
+    &__link {
+        color: white;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-size: 13px;
+        line-height: 16px;
+        letter-spacing: -0.005em;
+    }
+
+
+}
