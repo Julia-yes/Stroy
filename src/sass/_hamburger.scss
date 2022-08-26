@@ -14,26 +14,28 @@
         
         &_1 {
             transform:  translateX(5px) rotate(45deg);
+            background-color: red;
         }
 
         &_3 {
             transform: translateX(5px) rotate(-45deg);
+            background-color: red;
         }
     }
 
     &__line {
-        width: 36px;
-        height: 4px;
-        background-color: white;
-        border-radius: 4px;
+        width: 42px;
+        height: 1px;
+        background-color: black;
         transition: width .3s, transform .3s;  
+        margin-bottom: 5px;
 
         &_1 {
             transform-origin: 8% 0%;
         }
 
         &_2 {
-            width: 24px;
+            
         }    
 
         &_3 {
@@ -42,12 +44,25 @@
     }    
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 998px) {
     .hamburger {
         display: flex;
         align-items: center;
         justify-content: center;      
         flex-direction: column;  
         gap: 6px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .hamburger {
+        position: absolute;
+        right: 25px;
+    }
+}
+
+@media screen and (max-width: 428px) {
+    .hamburger {
+    right: 10px;
     }
 }

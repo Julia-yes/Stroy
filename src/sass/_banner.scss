@@ -1,0 +1,82 @@
+@use '_variables';
+
+.banner {
+    height: 520px;
+    background-image: url(../../images/banner.jpg);
+    background-repeat: no-repeat;
+    background-clip: border-box;
+    background-size: cover;
+    z-index: -1;
+    color: white;
+
+    &__content  {
+        position: relative;
+        width: 540px;
+        padding-top: 135px;
+        padding-left: 70px;
+    }
+    
+
+    &__label {
+        
+        font-weight: 600;
+        font-size: 40px;
+        line-height: 55px;
+        letter-spacing: 0.005em;
+    }
+
+    &__border {
+        height: 4px;
+        width: 350px;
+        margin-left: 10px;
+        background-color: variables.$border-color;
+        margin-top: 5px;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    .banner {
+        height: 835px;
+        background-position: top 0px left -301px;
+
+        &__content {
+            padding-top: 45px;
+            width: 375px;            
+            margin: 0 auto;
+            padding-left: 0;
+        }
+
+        &__label {
+            font-size: 36px;
+        } 
+
+        &__border {
+            position: absolute;
+            bottom: 0;
+            width: 320px;
+            bottom: -10px;
+            left: 10px;
+            margin: 0;
+        }
+    }      
+}
+
+@media screen and (max-width: 428px) {
+    .banner {
+        &__content {            
+            width: 300px;            
+            
+        }
+
+        &__label {
+            font-size: 30px;
+        } 
+        &__border {            
+            width: 250px;            
+        }
+
+        
+    }      
+}
+

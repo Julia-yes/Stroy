@@ -13,15 +13,29 @@
     
 
     &__number {
-        color: variables.$main_text-color;
+        color: variables.$text-color;
         text-decoration: none;
         padding-bottom: 5px;
     }
 
     &__btn {
-        color: variables.$main_text-color;
+        color: variables.$text-color;
         text-decoration: none;
-        padding-bottom: 5px;
-        border-bottom: 1px solid variables.$border_color;
+        
     }
+
+    &__border {
+        height: 2px;
+        width: 130px;
+        border-bottom: 1px solid variables.$border-color;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .phone {
+        font-size: 14px;
+        line-height: 17px;
+        margin: 0;
+    }
+
 }

@@ -1,0 +1,28 @@
+@use '_variables';
+
+
+.bank {
+    &__content {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding-bottom: 20px;
+    }
+
+    &__img {
+        width: 120px;
+        height: 100px;
+        
+        
+    }
+
+    &__main-information {
+        padding-left: 15px;
+        font-family: 'Lato';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 33px;
+        letter-spacing: 0.035em;
+    }
+}

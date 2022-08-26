@@ -6,7 +6,7 @@
         <title>Komstroy</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="Komstroy">
-        <link rel="stylesheet" href="./css/style.css">
+        <link rel="stylesheet" href="./dist/css/style.css">
     </head>
 
     <body class="main"> 
@@ -14,7 +14,7 @@
             <div class="wrapper">
                 <div class="header__top header">
                     <div class="header__logo logo">
-                        <img src="./images/logo.svg" alt="logo">
+                        <img src="./images/logo.svg" class="logo__img" alt="logo">
                     </div>
                     <div class="header__right-part">
                         <button class="header__btn btn">
@@ -23,6 +23,7 @@
                         <div class="header__phone phone">
                             <a href="#" class="phone__number">+7(495)580-12-04</a>
                             <a href="#" class="phone__btn">Заказать звонок</a>
+                            <div class="phone__border"></div>
                         </div>
                     </div>
                     
@@ -32,24 +33,146 @@
                         <div class="hamburger__line hamburger__line_3"></div>
                     </div>
                 </div>        
-                <nav class="header__nav nav">
-                    <ul class="nav__list">
-                        <li class="nav__item"><a href="#" class="nav__link" >Ипотека</a></li>
-                        <li class="nav__item"><a href="#" class="nav__link" >Проекты</a></li>
-                        <li class="nav__item"><a href="#" class="nav__link" >Производство</a></li>
-                        <li class="nav__item"><a href="#" class="nav__link" >Продукция</a></li>
-                        <li class="nav__item"><a href="#" class="nav__link" >Мы построили</a></li>
-                        <li class="nav__item"><a href="#" class="nav__link" >Услуги</a></li>
-                        <li class="nav__item"><a href="#" class="nav__link" >О нас</a></li>
-                        <li class="nav__item"><a href="#" class="nav__link" >Дилерам</a></li>
-                        <li class="nav__item"><a href="#" class="nav__link" >Контакты</a></li>
+                <div class="header__navigation navigation">
+                    <ul class="navigation__list">
+                        <li class="navigation__item"><a href="#" class="navigation__link" >Ипотека</a></li>
+                        <li class="navigation__item"><a href="#" class="navigation__link" >Проекты</a></li>
+                        <li class="navigation__item"><a href="#" class="navigation__link" >Производство</a></li>
+                        <li class="navigation__item"><a href="#" class="navigation__link" >Продукция</a></li>
+                        <li class="navigation__item"><a href="#" class="navigation__link" >Мы построили</a></li>
+                        <li class="navigation__item"><a href="#" class="navigation__link" >Услуги</a></li>
+                        <li class="navigation__item"><a href="#" class="navigation__link" >О нас</a></li>
+                        <li class="navigation__item"><a href="#" class="navigation__link" >Дилерам</a></li>
+                        <li class="navigation__item"><a href="#" class="navigation__link" >Контакты</a></li>
                     </ul>
-                </nav>        
+                </div>        
             </div>
         </header>
-        <section>
-           
+        <section class="section_1">
+            <div class="wrapper">
+                <div class="banner">
+                    <div class="banner__content">
+                        <h1 class="banner__label">Дома из клееного бруса в ипотеку, кредит</h1>
+                        <div class="banner__border"></div>
+                    </div>                    
+                    <div class="banner__advantages advantages">
+                        <div class="advantages__item">
+                            <div class="advantages__number">
+                                1
+                            </div>
+                            <div class="advantages__text">
+                                мы аккредитованы в основных банках, таких как дом.рф, почта банк и т.д.
+                            </div>
+                        </div>
+                        <div class="advantages__item">
+                            <div class="advantages__number">
+                                2
+                            </div>
+                            <div class="advantages__text">
+                                мы не завышаем стоимость строительства, при работе в кредит, как это делают некоторые кампании. 
+                            </div>
+                        </div>
+                        <div class="advantages__item">
+                            <div class="advantages__number">
+                                3
+                            </div>
+                            <div class="advantages__text">
+                                мы всегда поможем с оформлением кредита, ипотеки, подбором выгодного кредитного предложения.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>      
         </section>
+            <div class="wrapper">
+                <div class="banks">                
+                    <div class="banks__arrow arrow">
+                        <div class="arrow__top"></div>
+                        <div class="arrow__bottom"></div>
+                    </div>
+                    <div class="banks__content">
+                        <h2 class="banks__title">Вы можете ознакомиться с предложениями наших банков - партнеров:</h2>
+                        <nav class="banks__proposal proposal">
+                            <div class="nav nav-tabs proposal__buttons " id="nav-tab" role="tablist">
+                              <button class="nav-link active proposal__button" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">
+                                <img src="./images/dom.svg" class="proposal__button-img">
+                                <div class="proposal__button-text">от 0,1%</div>
+                              </button>
+                              <button class="nav-link proposal__button" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">
+                                <img src="./images/loko.svg" class="proposal__button-img">
+                                <div class="proposal__button-text">от 6%</div>
+                              </button>
+                              <button class="nav-link proposal__button" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">
+                                <img src="./images/post.svg" class="proposal__button-img">
+                                <div class="proposal__button-text">от 9%</div>
+                              </button>
+                              <button class="nav-link proposal__button" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-item" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">
+                                <img src="./images/sber.svg" class="proposal__button-img">
+                                <div class="proposal__button-text">от 9,2%</div>
+                              </button>
+                            </div>
+                          </nav>
+                          <div class="tab-content proposals__content proposal" id="nav-tabContent">
+                            <div class="tab-pane fade in show active proposal__item bank" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab" tabindex="0">
+                                <div class="bank__content">
+                                    <img src="./images/dom.svg" class="bank__img">
+                                    <div class="bank__main-information">
+                                        Ставка: <b>от 0,1%</b><br>
+                                        Срок кредита: <b>от 3 до 30 лет</b><br>
+                                        Первоначальный взнос: <b>от 15%</b>
+                                    </div>
+                                </div>
+                                <div class="bank__another-information">
+                                    Наименнование продукта: Индивидуальное строительство жилого дома
+                                    Срок кредитования:
+                                    от 3 до 30 лет
+                                    Сумма кредита:
+                                    до 30 млн. руб.
+                                    Первоначальный взнос:
+                                    от 20%
+                                    Ставка:
+                                    от 15,3%
+
+                                    ТРЕБОВАНИЯ К ЗАЕМЩИКУ
+                                    Заемщики – граждане РФ 21-65 лет
+
+                                    
+                                    ОБЯЗАТЕЛЬНЫЕ КЛИЕНТСКИЕ ДОКУМЕНТЫ
+                                    Паспорт гражданина РФ;
+                                    Любой документ на выбор (СНИЛС, водительское удостоверение, удостоверение личности военнослужащего, удостоверение сотрудника федеральных органов власти, военный билет, загранпаспорт);
+                                    Документы на объект недвижимости.
+
+                                    ОДИН ИЗ ДОПОЛНИТЕЛЬНЫХ ДОКУМЕНТОВ (ПРИ СУММЕ ОТ 1 000 000 ₽)
+                                    -
+
+                                    ПРЕИМУЩЕСТВА
+
+                                    Ставка: 15,7%(мин.15,3 %) стандартное ИЖС/11,5% (мин. 11,1%) Стандартная ИЖС 30 млн рублей/
+                                    Льготное ИЖС при сумме кредита до 12млн
+
+                                    Сумма кредита:
+                                    до 30 млн руб. – Москва, Московская область, Санкт-Петербург и Ленинградская область
+                                    до 10 млн руб. – иные регионы
+
+                                    Цель кредита:
+                                    1. Приобретение земельного участка и строительство на нем жилого дома
+                                    2. Строительство на имеющемся земельном участке жилого дома
+
+                                    Дополнительные возможности:
+                                    Легкая ипотека: по двум документам
+
+                                </div>
+                            </div>
+                            <div class="tab-pane fade proposal__item" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab" tabindex="0">This is some placeholder content the Ho</div>
+                            <div class="tab-pane fade proposal__item" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab" tabindex="0">iiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiii</div>
+                            <div class="tab-pane fade proposal__item" id="nav-item" role="tabpanel" aria-labelledby="nav-contact-tab" tabindex="0">88888888888888888888888888888888888888888888888888888888888888888888888888</div>
+                          </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+       
         <!-- <footer>
             <div class="wrapper">
                 <footer id="footer">
@@ -129,6 +252,6 @@
                 </div>
             </div>
         </footer>         -->
-        <script src="./js/script.js"></script>        
+        <script src="./dist/js/main.js"></script>        
     </body>
 </html>
