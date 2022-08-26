@@ -8,4 +8,49 @@
         text-align: center;
         padding: 30px 120px 50px 120px;
     }
+
+    &__detailed {
+        padding: 0;
+        padding-top: 20px;
+        margin-bottom: 25px;
+        background-color: transparent;
+        border: none;
+        font-family: 'Lato';
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+        border-bottom: 1px solid variables.$border-color;
+
+    }
+
+    &__button {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .banks {
+
+        &__title {
+            font-size: 14px;
+            line-height: 17px;
+        }
+
+        &__detailed {
+            font-size: 13px;
+        }
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .banks {
+
+        &__title {
+            padding: 30px 50px 50px 50px;
+        }
+
+        &__detailed-wrapper {
+            text-align: center;
+        }
+    }
 }

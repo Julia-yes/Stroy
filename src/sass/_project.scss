@@ -1,0 +1,152 @@
+@use '_variables';
+
+.projects {
+    padding-top: 45px;
+
+    &__title {
+        font-size: 20px;
+        line-height: 24px;
+        text-align: center;
+    }
+
+    &__wrapper {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 40px 30px 0 30px;
+    }
+
+    &__button {
+        margin-top: 25px;
+        margin-right: 210px;
+        font-family: 'Montserrat';
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
+
+        &-wrapper {
+            text-align: end;
+        }
+    }
+
+}
+
+.project {
+    position: relative;
+
+    &__img {
+
+        width: 160px;
+        height: 160px;
+        object-fit: cover;
+    }
+
+    &__content {
+        font-family: 'Inter';
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 18px;
+        padding-top: 25px;
+    }
+
+    &__price {
+        font-family: 'Inter';
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 17px;
+        padding: 5px 20px;
+        position: absolute;
+        top: 10px;
+        right: -20px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .projects {
+        
+        &__wrapper {            
+            padding: 40px 65px 0 65px;
+            flex-wrap: wrap;
+            gap: 45px;
+            justify-content: space-around;
+        }    
+
+        &__button {
+            margin-right: 85px;
+        }
+
+    }
+    .project {
+        
+        &__img {
+    
+            width: 260px;
+            height: 260px;
+        }
+    
+        &__content {
+            font-size: 20px;
+            line-height: 24px;
+            padding-top: 15px;
+        }
+    
+        &__price {
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 24px;
+            padding: 5px 20px;
+            top: 20px;
+            right: -50px;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .projects {
+        
+        &__wrapper {   
+            gap: 50px;
+        }    
+
+        &__button {
+            margin-right: 0;
+
+            &-wrapper {
+                text-align: center;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 576px) {
+    
+    .project {
+        
+        &__img {
+    
+            width: 265px;
+            height: 265px;
+        }
+    
+        &__content {
+            font-size: 20px;
+            line-height: 24px;
+            padding-top: 15px;
+        }
+    
+        &__price {
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 19px;
+            padding: 5px 50px;
+            top: 30px;
+            right: -55px;
+        }
+    }
+}
+
+@media screen and (max-width: 428px) {
+    
+}
+

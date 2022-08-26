@@ -463,6 +463,13 @@ header {
   line-height: 20px;
   letter-spacing: 0.035em;
 }
+.btn_green {
+  background-color: #85B911;
+  color: white;
+  font-weight: 500;
+  border: none;
+  padding: 10px 45px;
+}
 
 @media screen and (max-width: 768px) {
   .btn {
@@ -565,7 +572,12 @@ header {
 @media screen and (max-width: 576px) {
   .navigation {
     width: 60%;
-    top: 145px;
+    top: 140px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .navigation {
+    top: 130px;
   }
 }
 .banner {
@@ -751,7 +763,39 @@ header {
   text-align: center;
   padding: 30px 120px 50px 120px;
 }
+.banks__detailed {
+  padding: 0;
+  padding-top: 20px;
+  margin-bottom: 25px;
+  background-color: transparent;
+  border: none;
+  font-family: "Lato";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  border-bottom: 1px solid #3DCA76;
+}
+.banks__button {
+  text-align: center;
+}
 
+@media screen and (max-width: 992px) {
+  .banks__title {
+    font-size: 14px;
+    line-height: 17px;
+  }
+  .banks__detailed {
+    font-size: 13px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .banks__title {
+    padding: 30px 50px 50px 50px;
+  }
+  .banks__detailed-wrapper {
+    text-align: center;
+  }
+}
 .proposal__buttons {
   display: flex;
   flex-direction: row;
@@ -759,6 +803,14 @@ header {
   align-content: center;
   padding: 20px 0 70px 0;
   border: none;
+}
+.proposal__content {
+  padding: 0 30px;
+}
+.proposal__button-wrapper {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
 }
 .proposal__button.nav-link {
   width: 110px;
@@ -798,6 +850,23 @@ header {
   transition: color 0.3s;
 }
 
+@media screen and (max-width: 992px) {
+  .proposal__content {
+    width: 712px;
+    padding-left: 65px;
+  }
+}
+@media screen and (max-width: 834px) {
+  .proposal__content {
+    padding-left: 50px;
+    width: 85%;
+  }
+}
+@media screen and (max-width: 428px) {
+  .proposal__content {
+    padding-left: 15px;
+  }
+}
 .bank__content {
   display: flex;
   flex-direction: row;
@@ -816,4 +885,212 @@ header {
   font-size: 16px;
   line-height: 33px;
   letter-spacing: 0.035em;
+}
+.bank__another-information {
+  font-family: "Lato";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+}
+.bank__another-information .bank__list-container {
+  padding-left: 25px;
+}
+.bank__another-information .bank__list {
+  margin: 0;
+  padding: 0;
+}
+
+@media screen and (max-width: 992px) {
+  .bank__main-information {
+    font-size: 14px;
+    line-height: 28px;
+  }
+  .bank__another-information {
+    font-size: 14px;
+    line-height: 18px;
+  }
+}
+.projects {
+  padding-top: 45px;
+}
+.projects__title {
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+}
+.projects__wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 30px 0 30px;
+}
+.projects__button {
+  margin-top: 25px;
+  margin-right: 210px;
+  font-family: "Montserrat";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+}
+.projects__button-wrapper {
+  text-align: end;
+}
+
+.project {
+  position: relative;
+}
+.project__img {
+  width: 160px;
+  height: 160px;
+  object-fit: cover;
+}
+.project__content {
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 18px;
+  padding-top: 25px;
+}
+.project__price {
+  font-family: "Inter";
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  padding: 5px 20px;
+  position: absolute;
+  top: 10px;
+  right: -20px;
+}
+
+@media screen and (max-width: 992px) {
+  .projects__wrapper {
+    padding: 40px 65px 0 65px;
+    flex-wrap: wrap;
+    gap: 45px;
+    justify-content: space-around;
+  }
+  .projects__button {
+    margin-right: 85px;
+  }
+
+  .project__img {
+    width: 260px;
+    height: 260px;
+  }
+  .project__content {
+    font-size: 20px;
+    line-height: 24px;
+    padding-top: 15px;
+  }
+  .project__price {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    padding: 5px 20px;
+    top: 20px;
+    right: -50px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .projects__wrapper {
+    gap: 50px;
+  }
+  .projects__button {
+    margin-right: 0;
+  }
+  .projects__button-wrapper {
+    text-align: center;
+  }
+}
+@media screen and (max-width: 576px) {
+  .project__img {
+    width: 265px;
+    height: 265px;
+  }
+  .project__content {
+    font-size: 20px;
+    line-height: 24px;
+    padding-top: 15px;
+  }
+  .project__price {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    padding: 5px 50px;
+    top: 30px;
+    right: -55px;
+  }
+}
+.individual {
+  padding: 40px 30px 65px 30px;
+}
+.individual__title {
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 39px;
+  text-align: center;
+}
+.individual__text {
+  padding-top: 25px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+  padding-bottom: 70px;
+}
+.individual__form-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 30px;
+}
+.individual__description {
+  width: 220px;
+  font-family: "Lato";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+}
+.individual input {
+  border: none;
+  background-color: transparent;
+  border-bottom: 1px solid black;
+  width: 200px;
+  height: 25px;
+  margin-bottom: 40px;
+}
+
+.form {
+  width: 300px;
+  height: 360px;
+  border-radius: 15px;
+  border: 1px solid #3DCA76;
+  text-align: center;
+}
+.form__name {
+  padding-top: 60px;
+}
+.form__file {
+  display: none;
+}
+.form__file-button {
+  border: none;
+  background-color: transparent;
+}
+.form__explanation {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+}
+.form__footnote {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 12px;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.25);
 }

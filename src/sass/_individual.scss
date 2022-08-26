@@ -1,0 +1,46 @@
+@use '_variables';
+
+
+.individual {
+    padding: 40px 30px 65px 30px;
+
+    &__title {
+        font-weight: 500;
+        font-size: 32px;
+        line-height: 39px;
+        text-align: center;
+    }
+
+    &__text {
+        padding-top: 25px;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 24px;
+        text-align: center;
+        padding-bottom: 70px;
+    }
+
+    &__form-wrapper {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 30px;
+    }
+
+    &__description {
+        width: 220px;
+        font-family: 'Lato';
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+    }
+
+    input {
+        border: none;
+        background-color: transparent;
+        border-bottom: 1px solid black;
+        width: 200px;
+        height: 25px;
+        margin-bottom: 40px;
+    }
+}

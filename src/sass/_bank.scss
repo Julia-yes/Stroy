@@ -25,4 +25,36 @@
         line-height: 33px;
         letter-spacing: 0.035em;
     }
+
+    &__another-information {
+        font-family: 'Lato';
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 21px;
+
+        .bank__list-container {
+            padding-left: 25px;
+        }
+
+        .bank__list {
+            margin: 0;
+            padding: 0;
+        }
+        
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .bank {
+        &__main-information {
+            
+            font-size: 14px;
+            line-height: 28px;
+        }
+    
+        &__another-information {
+            font-size: 14px;
+            line-height: 18px;
+        }
+    }
 }

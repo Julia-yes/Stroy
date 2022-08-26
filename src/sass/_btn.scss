@@ -9,6 +9,14 @@
     font-size: 16px;
     line-height: 20px;
     letter-spacing: 0.035em;
+
+    &_green {
+        background-color: variables.$main-color;
+        color: white;
+        font-weight: 500;
+        border: none;
+        padding: 10px 45px;
+    }
 }
 
 @media screen and (max-width: 768px) {

@@ -9,6 +9,16 @@
         padding: 20px 0 70px 0;
         border: none;
     }
+
+    &__content {
+        padding: 0 30px;
+    }
+
+    &__button-wrapper {
+        flex-grow: 1;
+        display: flex;
+        justify-content: center;
+    }
       
     &__button {
         &.nav-link {
@@ -55,6 +65,34 @@
             font-family: "Inter";
             transition: color 0.3s;
             
+        }
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .proposal{
+        
+        &__content {
+            width: 712px;
+            padding-left: 65px;
+        }
+
+    }
+}
+
+@media screen and (max-width: 834px) {
+    .proposal{        
+        &__content {
+            padding-left: 50px;
+            width: 85%;
+        }
+    }
+}
+
+@media screen and (max-width: 428px) {
+    .proposal{        
+        &__content {
+            padding-left: 15px;
         }
     }
 }
