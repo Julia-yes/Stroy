@@ -9,6 +9,8 @@
         font-size: 32px;
         line-height: 39px;
         text-align: center;
+        font-family: 'Montserrat', sans-serif;
+        text-transform: none;
     }
 
     &__text {
@@ -63,7 +65,6 @@
     .input:focus:-moz-placeholder           {opacity: 0; transition: opacity 0.3s ease;}
     .input:focus:-ms-input-placeholder      {opacity: 0; transition: opacity 0.3s ease;}
 
-
     .input {
         border: none;
         background-color: transparent;
@@ -77,6 +78,10 @@
             outline: none;
             border-color: variables.$border-color;
         }
+    }
+
+    i {
+        font-family: "Montserrat", sans-serif;
     }
 }
 

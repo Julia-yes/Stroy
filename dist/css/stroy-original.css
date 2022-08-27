@@ -100,7 +100,7 @@ height:100%;
 min-height:100% !important;
 }
 body {
-font-family: "OpenSans";
+font-family: "Open Sans";
 font-size:0.9em;
 font-weight:500;
 color:#222222;
@@ -186,7 +186,8 @@ text-align:right;
 .policy {
 padding:10px 0;
 color:#1b99bd;
-font-family:"OpenSans-Semibold";
+font-family: 'Open Sans', sans-serif;
+font-weight: 600;
 border-top:1px dashed #CCCCCC;
 }
 .center_button {
@@ -215,8 +216,8 @@ text-align:right;
 
 
 b, strong, .strong {
-font-family: "OpenSans-Bold";
-font-weight:normal;
+font-family: "Open Sans";
+font-weight: 700;
 }
 i, .italic {
 font-family: "OpenSans-Italic";
@@ -272,7 +273,8 @@ font-weight:normal;
 
 .sub_h2 {
 font-size:0.95em;
-font-family:"OpenSans-Bold";
+font-family: "Open Sans";
+font-weight: 700;
 text-align:center;
 text-transform:uppercase;
 margin:-30px 0 30px 0;
@@ -304,7 +306,8 @@ background:#85b911;
 text-decoration:none;
 padding:10px 5px;
 text-transform:uppercase;
-font-family:"OpenSans-Bold";
+font-family: "Open Sans";
+font-weight: 700;
 margin-bottom:2px;
 display:none;
 }
@@ -484,7 +487,8 @@ text-align:center;
 #top_image .main_titler .main_titler_text {
 color:#FFFFFF;
 font-size:4em;
-font-family: "OpenSans-Bold";
+font-family: "Open Sans";
+font-weight: 700;
 text-transform:uppercase;
 max-width:500px;
 margin:10px auto 30px auto;
@@ -597,7 +601,8 @@ height:auto;
 .material_tab .types_list .material_type .mt_name {
 color:#77ac00;
 font-size:1.1em;
-font-family:"OpenSans-Bold";
+font-family: "Open Sans";
+font-weight: 700;
 text-transform:uppercase;
 margin:15px 0;
 text-align:center;
@@ -613,7 +618,8 @@ vertical-align:middle;
 }
 .material_tab .types_list .mt_options .mt_option .mto_right {
 text-align:right;
-font-family:"OpenSans-Bold";
+font-family: "Open Sans";
+font-weight: 700;
 }
 .material_tab .types_list .material_type a.styler {
 color:#FFFFFF;
@@ -673,7 +679,8 @@ min-height:70px;
 text-decoration:none;
 text-transform:uppercase;
 font-size:1em;
-font-family: "OpenSans-Semibold";
+font-family: 'Open Sans', sans-serif;
+font-weight: 600;
 color:#333333;
 }
 .project .item_name:hover {
@@ -689,7 +696,8 @@ background:#85b911;
 color:#FFFFFF;
 }
 .project .item_price {
-font-family: "OpenSans-Semibold";
+font-family: 'Open Sans', sans-serif;
+font-weight: 600;
 font-size:1.5em;
 color:#77ac00;
 margin-top:15px;
@@ -1275,7 +1283,8 @@ text-align:left;
 .more_blocks.in_project .item .more_price {
     float: right;
     font-size: 1.6em;
-    font-family: "OpenSans-Semibold";
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
     text-align: right;
     color: #85b911;
     margin-top: -50px;
@@ -1307,7 +1316,8 @@ margin-bottom:8px;
 }
 #footer .footer_top ul.footer_menu li a {
 color:#CCCCCC;
-font-family:"OpenSans-Semibold";
+font-family: 'Open Sans', sans-serif;
+font-weight: 600;
 text-transform:uppercase;
 text-decoration:none;
 }
@@ -1321,7 +1331,7 @@ margin-top:15px;
 color:#999999;
 text-decoration:none;
 text-transform:none;
-font-family:"OpenSans";
+font-family: "Open Sans";
 }
 #footer .footer_top ul.footer_menu li ul a:hover {
 color:#FFFFFF;
@@ -1380,7 +1390,8 @@ background:url("img/tri.png") repeat-x bottom left;
 #page_titler h1 {
 text-align:center;
 color:#FFFFFF;
-font-family:"OpenSans-Bold";
+font-family: "Open Sans";
+font-weight: 700;
 margin:5px 0 15px 0;
 padding:0;
 }
@@ -1452,7 +1463,8 @@ margin-bottom:20px;
 }
 .left_menu.with_title h3 {
 font-size:1.2em;
-font-family: "OpenSans-Bold";
+font-family: "Open Sans";
+font-weight: 700;
 }
 
 .left_menu ul:first-child {
@@ -1561,7 +1573,8 @@ box-sizing:border-box;
 #filter .filter_block .label {
 float:left;
 width:140px;
-font-family:"OpenSans-Bold";
+font-family: "Open Sans";
+font-weight: 700;
 text-transform:uppercase;
 padding:6px 0;
 }
@@ -1704,7 +1717,8 @@ font-size:1.4em;
 .project_main_description .div_table.main_info .div_td.price {
 font-size:2em;
 color:#85b911;
-font-family:"OpenSans-Bold";
+font-family: "Open Sans";
+font-weight: 700;
 }
 .project_main_description .yellow_button {
 display:block;
@@ -1796,7 +1810,8 @@ background:#85b911;
 padding:15px 15px;
 color:#FFFFFF;
 text-transform:uppercase;
-font-family:"OpenSans-Semibold";
+font-family: 'Open Sans', sans-serif;
+font-weight: 600;
 font-size:1.2em;
 }
 
@@ -1811,7 +1826,8 @@ background:#EEEEEE;
 width:150px;
 text-align:center;
 color:#333333;
-font-family:"OpenSans-Semibold";
+font-family: 'Open Sans', sans-serif;
+font-weight: 600;
 font-size:1.2em;
 }
 #project_checks .check_table .div_tr .div_td:nth-child(3) {
@@ -1841,7 +1857,8 @@ margin-bottom:8px;
 #project_checks .info_blocks.div_table .div_td .ib_title {
 font-size:1.2em;
 text-transform:uppercase;
-font-family:"OpenSans-Semibold";
+font-family: 'Open Sans', sans-serif;
+font-weight: 600;
 }
 
 
@@ -1997,7 +2014,8 @@ font-size:0.9em;
 .news_list .item .item_title {
 margin:15px 0;
 font-size:1.2em;
-font-family:"OpenSans-Semibold";
+font-family: 'Open Sans', sans-serif;
+font-weight: 600;
 }
 .news_list .item .item_text {
 color:#666666;
@@ -2034,7 +2052,8 @@ margin-bottom:50px;
 }
 .contacts_content .contacts_title {
 font-size:1.3em;
-font-family:"OpenSans-Semibold";
+font-family: 'Open Sans', sans-serif;
+font-weight: 600;
 margin-bottom:25px;
 }
 .contacts_content .days {
@@ -2070,27 +2089,27 @@ opacity:0;
 opacity:1;
 }
 .social_icon.facebook {
-background-image:url("img/facebook_icon.svg");
+background-image:url("./../../images/facebook_icon.svg");
 }
 .social_icon.instagram {
-background-image:url("img/instagram_icon.svg");
+background-image:url("./../../images/instagram_icon.svg");
 }
 .social_icon.twitter {
-background-image:url("img/twitter_icon.svg");
+background-image:url("./../../images/twitter_icon.svg");
 }
 .social_icon.whatsapp {
-background-image:url("img/whatsapp_icon.svg");
+background-image:url("./../../images/whatsapp_icon.svg");
 }
 
 
 .social_icon.vk {
-background-image:url("img/vk_icon.svg");
+background-image:url("./../../images/vk_icon.svg");
 }
 .social_icon.telegram {
-background-image:url("img/telegram_icon.svg");
+background-image:url("./../../images/telegram_icon.svg");
 }
 .social_icon.dzen {
-background-image:url("img/dzen_icon.svg");
+background-image:url("./../../images/dzen_icon.svg");
 }
 
 #map {
@@ -2314,7 +2333,8 @@ color:#333333;
 text-align:center;
 font-size:2em;
 text-transform:uppercase;
-font-family:"OpenSans-Bold";
+font-family: "Open Sans";
+font-weight: 700;
 }
 .form_container .close_form, .form_container_credit .close_form {
 width:50px;
@@ -2386,7 +2406,8 @@ color:#FFFFFF;
 box-shadow:0 2px 5px rgba(0,0,0,0.5);
 }
 .project_tour .div_table .div_td:first-child {
-font-family:"OpenSans-Bold";
+    font-family: "Open Sans";
+    font-weight: 700;
 }
 
 
@@ -2856,11 +2877,13 @@ zoom:0.75;
 @media screen and (max-width: 480px) {
 h1 {
 font-size: 1.2em;
-font-family:"OpenSans-Bold";
+font-family: "Open Sans";
+font-weight: 700;
 }
 h2 {
 font-size: 1.2em;
-font-family:"OpenSans-Semibold";
+font-family: 'Open Sans', sans-serif;
+font-weight: 600;
 }
 .open_button {
 display:block;

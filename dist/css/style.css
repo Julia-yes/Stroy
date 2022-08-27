@@ -1,4 +1,3 @@
-@charset "UTF-8";
 .fade {
   transition: opacity 0.15s linear;
 }
@@ -236,104 +235,6 @@ header {
     max-width: 140px;
   }
 }
-/* 
---------------------------------
-ФУТЕР
---------------------------------
-*/
-#footer {
-  background: #3b3b3b;
-  padding: 50px 0;
-  color: #DDDDDD;
-}
-
-#footer .footer_top {
-  margin-bottom: 40px;
-  overflow: hidden;
-}
-
-#footer .footer_top ul {
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
-}
-
-#footer .footer_top ul li {
-  margin-bottom: 8px;
-}
-
-#footer .footer_top ul.footer_menu li a {
-  color: #CCCCCC;
-  font-family: "OpenSans-Semibold";
-  text-transform: uppercase;
-  text-decoration: none;
-}
-
-#footer .footer_top ul.footer_menu li a:hover {
-  color: #FFFFFF;
-}
-
-#footer .footer_top ul.footer_menu li ul {
-  margin-top: 15px;
-}
-
-#footer .footer_top ul.footer_menu li ul a {
-  color: #999999;
-  text-decoration: none;
-  text-transform: none;
-  font-family: "OpenSans";
-}
-
-#footer .footer_top ul.footer_menu li ul a:hover {
-  color: #FFFFFF;
-}
-
-#footer .footer_top ul.footer_menu {
-  display: block;
-  box-sizing: border-box;
-  width: 20%;
-  padding-right: 30px;
-  float: left;
-}
-
-#footer .footer_bottom .fb_right {
-  float: right;
-  width: 50%;
-  text-align: center;
-}
-
-#footer .footer_bottom .fb_right .item {
-  display: inline-block;
-  margin-left: 30px;
-  vertical-align: middle;
-}
-
-#footer .footer_bottom .fb_right .item.phone {
-  font-size: 1.5em;
-}
-
-#footer .footer_bottom .fb_left {
-  margin-right: 50%;
-}
-
-#footer .footer_bottom .fb_left .item {
-  display: inline-block;
-  margin-right: 20px;
-  vertical-align: top;
-}
-
-#footer .footer_bottom .fb_left .copyr {
-  color: #888888;
-  font-size: 0.9em;
-}
-
-.mw {
-  max-width: 1200px;
-  padding: 0 15px;
-  position: relative;
-  margin: 0 auto;
-}
-
 .wrapper {
   width: 1000px;
   margin: 0 auto;
@@ -567,6 +468,9 @@ header {
   width: 100%;
   left: 0;
 }
+.navigation__link:hover, .navigation__link:visited {
+  color: white;
+}
 
 @media screen and (max-width: 992px) {
   .navigation {
@@ -622,15 +526,18 @@ header {
 }
 .banner__content {
   position: relative;
-  width: 540px;
+  width: 690px;
   padding-top: 115px;
   padding-left: 70px;
 }
 .banner__label {
+  font-family: "Montserrat", sans-serif;
   font-weight: 600;
   font-size: 40px;
   line-height: 55px;
   letter-spacing: 0.005em;
+  color: white;
+  text-transform: none;
 }
 .banner__border {
   height: 4px;
@@ -807,6 +714,8 @@ header {
   line-height: 24px;
   text-align: center;
   padding: 50px 120px 15px 120px;
+  font-family: "Montserrat", sans-serif;
+  text-transform: none;
 }
 .banks__detailed-wrapper {
   padding-top: 20px;
@@ -1046,6 +955,8 @@ header {
   line-height: 24px;
   text-align: center;
   font-weight: 500;
+  font-family: "Montserrat", sans-serif;
+  text-transform: none;
 }
 .projects__wrapper {
   display: flex;
@@ -1179,6 +1090,8 @@ header {
   font-size: 32px;
   line-height: 39px;
   text-align: center;
+  font-family: "Montserrat", sans-serif;
+  text-transform: none;
 }
 .individual__text {
   padding-top: 25px;
@@ -1261,6 +1174,9 @@ header {
 .individual .input:focus {
   outline: none;
   border-color: #3DCA76;
+}
+.individual i {
+  font-family: "Montserrat", sans-serif;
 }
 
 @media screen and (max-width: 768px) {
