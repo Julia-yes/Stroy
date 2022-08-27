@@ -18,7 +18,7 @@
 
     &__main-information {
         padding-left: 15px;
-        font-family: 'Lato';
+        font-family: 'Lato', sans-serif;
         font-style: normal;
         font-weight: 400;
         font-size: 16px;
@@ -27,10 +27,10 @@
     }
 
     &__another-information {
-        font-family: 'Lato';
+        font-family: 'Lato', sans-serif;
         font-weight: 400;
         font-size: 16px;
-        line-height: 21px;
+        line-height: 1.4;
 
         .bank__list-container {
             padding-left: 25px;

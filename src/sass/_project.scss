@@ -7,23 +7,21 @@
         font-size: 20px;
         line-height: 24px;
         text-align: center;
+        font-weight: 500;
     }
 
     &__wrapper {
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
+        justify-content: center;
         align-items: center;
-        padding: 40px 30px 0 30px;
+        padding: 30px 30px 0 30px;
+        gap: 50px;
     }
 
     &__button {
         margin-top: 25px;
-        margin-right: 210px;
-        font-family: 'Montserrat';
-        font-weight: 400;
-        font-size: 14px;
-        line-height: 17px;
+        margin-right: 20px;
 
         &-wrapper {
             text-align: end;
@@ -43,15 +41,15 @@
     }
 
     &__content {
-        font-family: 'Inter';
+        font-family: 'Inter', sans-serif;
         font-weight: 400;
         font-size: 15px;
-        line-height: 18px;
+        line-height: 1.6;
         padding-top: 25px;
     }
 
     &__price {
-        font-family: 'Inter';
+        font-family: 'Inter', sans-serif;
         font-weight: 500;
         font-size: 14px;
         line-height: 17px;
@@ -59,6 +57,9 @@
         position: absolute;
         top: 10px;
         right: -20px;
+        background-color: variables.$main-color;
+        border-radius: 15px;
+        color: white;
     }
 }
 
@@ -130,9 +131,9 @@
         }
     
         &__content {
-            font-size: 20px;
-            line-height: 24px;
-            padding-top: 15px;
+            font-size: 16px;
+            line-height: 19px;
+            padding-top: 25px;
         }
     
         &__price {
@@ -147,6 +148,34 @@
 }
 
 @media screen and (max-width: 428px) {
+    .projects {
+
+        &__button {
+            padding: 10px;
+            font-size: 14px;
+        }
+
+    }
     
+    .project {
+        
+        &__img {    
+            width: 250px;
+            height: 250px;
+        }
+    
+        &__content {
+            font-size: 20px;
+            line-height: 24px;
+            padding-top: 15px;
+        }
+    
+        &__price {           
+            top: 25px;
+            right: -30px;
+        }
+
+        
+    }
 }
 

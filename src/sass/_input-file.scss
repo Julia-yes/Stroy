@@ -1,0 +1,62 @@
+@use '_variables';
+
+.input__file {
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+
+    &-wrapper {
+        width: 200px;
+        position: relative;
+        margin-left: 38px;
+        text-align: left;
+        margin-bottom: 50px;
+    }
+
+    &-icon-wrapper {
+        height: 32px;
+        width: 32px;
+        margin-right: 10px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+    }
+
+    &-button-text {   
+        font-family: 'Lato', sans-serif;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
+        text-align: left;
+    }
+
+    &-button {
+        width: 100%;
+        max-width: 290px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-box-pack: start;
+        -ms-flex-pack: start;
+        justify-content: flex-start;
+        border-radius: 15px;
+        cursor: pointer;
+        margin: 0 auto;
+        border: 1px solid transparent;
+        transition: border-color 0.3s;
+        padding: 5px 10px;
+
+        &:hover {
+            border-color: variables.$border-color;
+        }
+    }
+}

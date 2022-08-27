@@ -1,55 +1,71 @@
 @use '_variables';
 
 .arrow {
-    cursor: pointer;
     height: 12px;
     width: 35px;
     position: relative;
     margin: 0 auto;
-    padding-top: 5px;
-}
-.arrow__top, 
-.arrow__bottom {
-    background: variables.$border-color;
-    height: 2px;
-    left: 0px;
-    position: absolute;    
-    width: 20px;
-}
-.arrow__top {
-    transform: rotate(30deg);
-    transform-origin: bottom right;
-    top: 15px;
-}
-.arrow__bottom {
-    transform: rotate(150deg);
-    transform-origin: top right;
-    top: 17px;
-}
-.arrow__top::after, 
-.arrow__bottom::after {
-    background: variables.$border-color_dark;
-    content: '';
-    height: 100%;
     position: absolute;
-    top: 0;
-    transition: all 0.15s;
+    bottom: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    // &:hover {
+    //     .arrow__top::after {
+    //         left: 0;
+    //         transition-delay: 0.15s;
+    //     }
+    //     .arrow__bottom::after {
+    //         right: 0;
+    //         transition-delay: 0s;
+    //     }
+    // }
+
+    &__top, 
+    &__bottom {
+        background: variables.$border-color;
+        height: 2px;
+        left: 0px;
+        position: absolute;    
+        width: 20px;
+    }
+    &__top {
+        transform: rotate(30deg);
+        transform-origin: bottom right;
+        top: 15px;
+
+        &::after {
+            left: 100%;
+            right: 0;
+            transition-delay: 0s;
+        }
+    }
+    &__bottom {
+        transform: rotate(150deg);
+        transform-origin: top right;
+        top: 17px;
+
+        &::after {
+            left: 0;
+            right: 100%;
+            transition-delay: 0.15s;
+        }
+    }
+    &__top::after, 
+    &__bottom::after {
+        background: variables.$border-color_dark;
+        content: '';
+        height: 100%;
+        position: absolute;
+        top: 0;
+        transition: all 0.15s;
+    }
+
 }
-.arrow__top::after {
-    left: 100%;
-    right: 0;
-    transition-delay: 0s;
-}
-.arrow__bottom::after {
-    left: 0;
-    right: 100%;
-    transition-delay: 0.15s;
-}
-.arrow:hover .arrow__top::after {
-    left: 0;
-    transition-delay: 0.15s;
-}
-.arrow:hover .arrow__bottom::after {
-    right: 0;
-    transition-delay: 0s;
+
+@media screen and (max-width: 768px) {
+    
+    .arrow {
+        display: none;
+    }
 }

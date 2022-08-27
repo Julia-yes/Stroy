@@ -29,18 +29,113 @@
 
     &__description {
         width: 220px;
-        font-family: 'Lato';
+        font-family: 'Lato', sans-serif;
         font-weight: 400;
         font-size: 16px;
         line-height: 19px;
     }
 
-    input {
+    .input::-webkit-input-placeholder {
+        font-family: 'Lato', sans-serif;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 19px;
+        letter-spacing: 0.04em;
+        color: rgba(0, 0, 0, 0.27);
+
+    }
+
+    .input:-moz-placeholder { 
+        font-family: 'Lato', sans-serif;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 19px;
+        letter-spacing: 0.04em;
+        color: rgba(0, 0, 0, 0.27);
+    }
+
+    .input::-webkit-input-placeholder       {opacity: 1; transition: opacity 0.3s ease;}
+    .input::-moz-placeholder                {opacity: 1; transition: opacity 0.3s ease;}
+    .input:-moz-placeholder                 {opacity: 1; transition: opacity 0.3s ease;}
+    .input:-ms-input-placeholder            {opacity: 1; transition: opacity 0.3s ease;}
+    .input:focus::-webkit-input-placeholder {opacity: 0; transition: opacity 0.3s ease;}
+    .input:focus::-moz-placeholder          {opacity: 0; transition: opacity 0.3s ease;}
+    .input:focus:-moz-placeholder           {opacity: 0; transition: opacity 0.3s ease;}
+    .input:focus:-ms-input-placeholder      {opacity: 0; transition: opacity 0.3s ease;}
+
+
+    .input {
         border: none;
         background-color: transparent;
         border-bottom: 1px solid black;
         width: 200px;
         height: 25px;
-        margin-bottom: 40px;
+        margin-bottom: 35px;
+        box-sizing: border-box;       
+
+        &:focus {
+            outline: none;
+            border-color: variables.$border-color;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    .individual {
+
+
+        &__title {
+            font-size: 20px;
+            line-height: 24px;
+        }
+
+        &__text {
+            font-size: 16px;
+            line-height: 20px;
+        }
+        &__form {
+            order: 2;
+            
+            &-wrapper {            
+                flex-direction: column;
+                align-items: center;
+            }
+        }    
+
+        &__description {
+            width: 280px;            
+        }
+
+        &__arrow {
+            position: absolute;
+            left: -105px;
+            top: 70px;
+            z-index: -5;
+            transform: rotate(-55deg);
+        }
+
+        &__content {
+            position: relative;
+        }
+    }
+
+}
+
+@media screen and (max-width: 428px) {
+    .individual {
+
+        &__description {
+            width: 260px;            
+        }
+
+        &__text {
+            margin: 0 auto;
+        }
+
+        &__arrow {
+            left: -100px;
+            top: 100px;
+        }
     }
 }

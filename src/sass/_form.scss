@@ -9,33 +9,37 @@
     text-align: center;
 
     &__name {
-        padding-top: 60px;
-    }
-
-    &__file {
-        display: none;
-
-        &-button {
-            border: none;
-            background-color: transparent;
-        }
+        margin-top: 50px;
     }
 
     &__explanation {
-        font-family: 'Lato';
+        font-family: 'Lato', sans-serif;
         font-style: normal;
         font-weight: 400;
         font-size: 14px;
         line-height: 17px;
     }
 
+    &__button {
+        font-family: 'Montserrat', sans-serif;
+    }
+
     &__footnote {
-        font-family: 'Lato';
+        font-family: 'Lato', sans-serif;
         font-style: normal;
         font-weight: 400;
         font-size: 10px;
         line-height: 12px;
         text-align: center;
         color: rgba(0, 0, 0, 0.25);
+        padding: 10px 0 20px 0;
+    }
+
+    
+}
+
+@media screen and (max-width: 428px) {
+    .form {
+        width: 270px;
     }
 }

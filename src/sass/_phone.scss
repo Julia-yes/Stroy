@@ -20,15 +20,44 @@
 
     &__btn {
         color: variables.$text-color;
-        text-decoration: none;
-        
+        border: none;
+        background-color: transparent;
+        padding: 0;
+        font-family: 'Montserrat';
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20px;
+        text-align: center;
+        letter-spacing: 0.02em;
+        cursor: pointer;
+        position: relative;
+
+        &:after { 
+            content: "";
+            position: absolute;
+            bottom: -2px;
+            left: 0;
+            display: block;
+            background: none repeat scroll 0 0 transparent;
+            height: 1px;
+            width: 100%;
+            background: variables.$border-color;;
+            transition: width 0.3s ease 0s, left 0.3s ease 0s;
+        }
+            
+        &:hover::after { 
+            width: 0; 
+            left: 50%; 
+        }
     }
 
-    &__border {
-        height: 2px;
-        width: 130px;
-        border-bottom: 1px solid variables.$border-color;
+}
+
+@media screen and (max-width: 992px) {
+    .phone {
+        margin-left: 20px;
     }
+
 }
 
 @media screen and (max-width: 576px) {
@@ -36,6 +65,11 @@
         font-size: 14px;
         line-height: 17px;
         margin: 0;
+
+        &__btn {
+            font-size: 14px;
+            line-height: 17px;
+        }
     }
 
 }

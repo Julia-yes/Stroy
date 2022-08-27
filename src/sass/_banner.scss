@@ -6,13 +6,16 @@
     background-repeat: no-repeat;
     background-clip: border-box;
     background-size: cover;
-    z-index: -1;
-    color: white;
+    background-position: center;
+    color: white;   
+    position: relative;
+
+    
 
     &__content  {
         position: relative;
         width: 540px;
-        padding-top: 135px;
+        padding-top: 115px;
         padding-left: 70px;
     }
     
@@ -33,6 +36,16 @@
         margin-top: 5px;
     }
 
+}
+
+.banner:hover + .arrow__top::after {
+    left: 0;
+    transition-delay: 0.15s;
+}
+
+.banner:hover + .arrow__bottom::after {
+    right: 0;
+    transition-delay: 0s;
 }
 
 @media screen and (max-width: 768px) {
@@ -71,6 +84,7 @@
 
         &__label {
             font-size: 30px;
+            line-height: 1.4;
         } 
         &__border {            
             width: 250px;            

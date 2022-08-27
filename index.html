@@ -6,51 +6,55 @@
         <title>Komstroy</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="Komstroy">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Lato:wght@300;400&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="./dist/css/style.css">
+        <link rel="stylesheet" href="./dist/css/stroy-original.css">
     </head>
-
     <body class="main"> 
         <header>
             <div class="wrapper">
                 <div class="header__top header">
-                    <div class="header__logo logo">
+                    <a class="header__logo logo" href="#">
                         <img src="./images/logo.svg" class="logo__img" alt="logo">
-                    </div>
+                    </a>
                     <div class="header__right-part">
-                        <button class="header__btn btn">
+                        <button class="header__btn btn btn__transparent">
                             <span>Заявка на расчёт дома</span>
                         </button>
                         <div class="header__phone phone">
                             <a href="#" class="phone__number">+7(495)580-12-04</a>
-                            <a href="#" class="phone__btn">Заказать звонок</a>
+                            <button href="#" class="phone__btn">Заказать звонок</button>
                             <div class="phone__border"></div>
                         </div>
-                    </div>
-                    
+                    </div>                    
                     <div class="hamburger">
                         <div class="hamburger__line hamburger__line_1"></div>
                         <div class="hamburger__line hamburger__line_2"></div>
                         <div class="hamburger__line hamburger__line_3"></div>
                     </div>
-                </div>        
+                </div>   
+            </div>     
                 <div class="header__navigation navigation">
-                    <ul class="navigation__list">
-                        <li class="navigation__item"><a href="#" class="navigation__link" >Ипотека</a></li>
-                        <li class="navigation__item"><a href="#" class="navigation__link" >Проекты</a></li>
-                        <li class="navigation__item"><a href="#" class="navigation__link" >Производство</a></li>
-                        <li class="navigation__item"><a href="#" class="navigation__link" >Продукция</a></li>
-                        <li class="navigation__item"><a href="#" class="navigation__link" >Мы построили</a></li>
-                        <li class="navigation__item"><a href="#" class="navigation__link" >Услуги</a></li>
-                        <li class="navigation__item"><a href="#" class="navigation__link" >О нас</a></li>
-                        <li class="navigation__item"><a href="#" class="navigation__link" >Дилерам</a></li>
-                        <li class="navigation__item"><a href="#" class="navigation__link" >Контакты</a></li>
-                    </ul>
-                </div>        
-            </div>
+                    <div class="wrapper">
+                        <ul class="navigation__list">
+                            <li class="navigation__item"><a href="#" class="navigation__link" >Ипотека</a></li>
+                            <li class="navigation__item"><a href="#" class="navigation__link" >Проекты</a></li>
+                            <li class="navigation__item"><a href="#" class="navigation__link" >Производство</a></li>
+                            <li class="navigation__item"><a href="#" class="navigation__link" >Продукция</a></li>
+                            <li class="navigation__item"><a href="#" class="navigation__link" >Мы построили</a></li>
+                            <li class="navigation__item"><a href="#" class="navigation__link" >Услуги</a></li>
+                            <li class="navigation__item"><a href="#" class="navigation__link" >О нас</a></li>
+                            <li class="navigation__item"><a href="#" class="navigation__link" >Дилерам</a></li>
+                            <li class="navigation__item"><a href="#" class="navigation__link" >Контакты</a></li>
+                        </ul>
+                    </div>                    
+                </div>
         </header>
         <section class="section_1">
-            <div class="wrapper">
-                <div class="banner">
+            <div class="banner">
+                <div class="wrapper">
                     <div class="banner__content">
                         <h1 class="banner__label">Дома из клееного бруса в ипотеку, кредит</h1>
                         <div class="banner__border"></div>
@@ -63,6 +67,7 @@
                             <div class="advantages__text">
                                 мы аккредитованы в основных банках, таких как дом.рф, почта банк и т.д.
                             </div>
+                            <div class="advantages__shadow"></div>
                         </div>
                         <div class="advantages__item">
                             <div class="advantages__number">
@@ -71,6 +76,7 @@
                             <div class="advantages__text">
                                 мы не завышаем стоимость строительства, при работе в кредит, как это делают некоторые кампании. 
                             </div>
+                            <div class="advantages__shadow"></div>
                         </div>
                         <div class="advantages__item">
                             <div class="advantages__number">
@@ -79,17 +85,20 @@
                             <div class="advantages__text">
                                 мы всегда поможем с оформлением кредита, ипотеки, подбором выгодного кредитного предложения.
                             </div>
+                            <div class="advantages__shadow"></div>
                         </div>
                     </div>
-                </div>
-            </div>      
-        </section>
-            <div class="wrapper">
-                <div class="banks">                
-                    <div class="banks__arrow arrow">
+                    <div class="banner__arrow arrow">
                         <div class="arrow__top"></div>
                         <div class="arrow__bottom"></div>
                     </div>
+                </div>                
+            </div>      
+        </section>
+        <section>
+            <div class="wrapper">
+                <div class="banks">                
+
                     <div class="banks__content">
                         <h2 class="banks__title">Вы можете ознакомиться с предложениями наших банков - партнеров:</h2>
                         <nav class="banks__proposal proposal">
@@ -302,15 +311,13 @@
                                 </div>
                             </div>
                             <div class="banks__detailed-wrapper">
-                                <button class="banks__detailed">Подробнее о предложении на сайте банка -></button>
-                            </div>
-                            
+                                <a class="banks__detailed" href="#">Подробнее о предложении на сайте банка -></a>
+                            </div>                            
                         </div>                        
                     </div>                    
                     <div class="banks__button">
                         <button class="bunks__submit-button btn btn_green">Подать заявку</button>
-                    </div>
-                    
+                    </div>                    
                 </div>
             </div>
         </section>
@@ -321,28 +328,28 @@
                     <div class="projects__wrapper">
                         <div class="projects__item project">
                             <img alt="project" class="project__img" src="./images/project.jpg">
-                            <div class="project__price btn btn_green">25000₽/мес.*</div>
+                            <div class="project__price">25000₽/мес.*</div>
                             <div class="project__content">
                                 <b>“Название проекта”</b><br> Площадь: <b>130 м</b><br> Стоимость: <b>5 000 000</b>
                             </div>
                         </div>
                         <div class="projects__item project">
                             <img alt="project" class="project__img" src="./images/project.jpg">
-                            <div class="project__price btn btn_green">25000₽/мес.*</div>
+                            <div class="project__price">25000₽/мес.*</div>
                             <div class="project__content">
                                 <b>“Название проекта”</b><br> Площадь: <b>130 м</b><br> Стоимость: <b>5 000 000</b>
                             </div>
                         </div>
                         <div class="projects__item project">
                             <img alt="project" class="project__img" src="./images/project.jpg">
-                            <div class="project__price btn btn_green">25000₽/мес.*</div>
+                            <div class="project__price">25000₽/мес.*</div>
                             <div class="project__content">
                                 <b>“Название проекта”</b><br> Площадь: <b>130 м</b><br> Стоимость: <b>5 000 000</b>
                             </div>
                         </div>
                         <div class="projects__item project">
                             <img alt="project" class="project__img" src="./images/project.jpg">
-                            <div class="project__price btn btn_green">25000₽/мес.*</div>
+                            <div class="project__price">25000₽/мес.*</div>
                             <div class="project__content">
                                 <b>“Название проекта”</b><br> Площадь: <b>130 м</b><br> Стоимость: <b>5 000 000</b>
                             </div>
@@ -350,12 +357,10 @@
                     </div>
                     <div class="projects__button-wrapper">
                         <button class="projects__button btn btn_green">Посмотреть остальные проекты -></button>
-                    </div>
-                    
+                    </div>                    
                 </div>
             </div>
         </section>
-
         <section>
             <div class="wrapper">
                 <div class="individual-projest individual">
@@ -363,22 +368,19 @@
                         Не нашли подходящий проект?
                     </h2>
                     <div class="individual__text">
-                        Мы можем разработать индивидуальный проект под ваши требования или использвать Ваш проект.
+                        Мы можем разработать <b>индивидуальный проект</b> под <b>ваши требования</b><br> или <br><i>использвать Ваш проект.</i>
                     </div>
-                    <div class="individual__form-wrapper">
+                    <form class="individual__form-wrapper">
                         <div class="individual__form form">
-                            <input class="form__name" placeholder="Имя">
-                            <input class="form__email" placeholder="Почта или телефон">
-                            <form>
-                                <input type="file" id="file" class="form__file">
-                                <label for="file">
-                                    <button class="form__file-button">
-                                        <img alt="paper clip" src="./images/clip.svg" class="form__clip">
-                                    </button>
-                                </label>   
-                            </form>
-                                                     
-                            <span class="form__explanation">Файл с вашим проектом или эскизом</span>
+                            <input class="form__name input" placeholder="Имя">
+                            <input class="form__email input" placeholder="Почта или телефон">
+                            <div class="input__file-wrapper">
+                                <input name="file" type="file" name="file" id="input__file" class="input input__file" multiple>
+                                <label for="input__file" class="input__file-button">
+                                    <span class="input__file-icon-wrapper"><img class="input__file-icon" src="./images/clip.svg" alt="Выбрать файл" width="25"></span>
+                                    <span class="input__file-button-text">Файл с вашим проектом или эскизом</span>
+                                </label>
+                            </div>
                             <div class="form__button-wrapper">
                                 <button class="form__button btn btn_green">Отправить</button>
                             </div>
@@ -389,95 +391,89 @@
                         </div>
                         <div class="individual__content">
                             <div class="individual__description">
-                                Заполните форму и мы посчитаем, сколько будет стоить строительство
+                                Заполните <i>форму</i> и мы посчитаем, сколько будет стоить строительство
                             </div>
                             <img alt="arrow" src="./images/arrow.svg" class="individual__arrow">
-                        </div>
-                        
-                    </div>
+                        </div>                        
+                    </form>
                 </div>
             </div>
         </section>
        
-        <!-- <footer>
-            <div class="wrapper">
-                <footer id="footer">
-                    <div class="mw">
-                        <div class="footer_top">
-                            <ul class="footer_menu">
-                                <li><a href="myi-proizvodim/">Строительство домов</a>
-                                    <ul><li class="first"><a href="myi-proizvodim/kleyonyij-brus" title="Строительство домов из клееного бруса собственного производства">Клееный брус</a></li>
-                <li class="last"><a href="myi-proizvodim/stroitelstvo-domov-iz-suhogo-profilirovannogo-brusa" title="Сухой профилированный брус. Строим дома из сухого бруса под ключ">Сухой профилированный брус</a></li>
-                </ul>
-                                </li>
+        <footer id="footer">
+            <div class="mw">
+                <div class="footer_top">
+                    <ul class="footer_menu">
+                        <li><a href="myi-proizvodim/">Строительство домов</a>
+                            <ul><li class="first"><a href="myi-proizvodim/kleyonyij-brus" title="Строительство домов из клееного бруса собственного производства">Клееный брус</a></li>
+        <li class="last"><a href="myi-proizvodim/stroitelstvo-domov-iz-suhogo-profilirovannogo-brusa" title="Сухой профилированный брус. Строим дома из сухого бруса под ключ">Сухой профилированный брус</a></li>
+        </ul>
+                        </li>
+                    </ul>
+                    <ul class="footer_menu">
+                        <li><a href="servises/">Услуги</a>
+                            <ul>
+                                <li class="first"><a href="servises/fundamentyi" title="Обустройство фундаментов">Обустройство фундаментов</a></li>
+                                <li><a href="servises/otdelka-pomeshheniy" title="Внутренняя отделка">Внутренняя отделка</a></li>
+                                <li><a href="servises/krovlya/" title="Кровля">Кровля</a></li>
+                                <li><a href="servises/inzhenernyie-kommunikatsii/" title="Инженерные системы">Инженерные системы</a></li>
+                                <li><a href="servises/drenaj" title="Обустройство дренажа">Обустройство дренажа</a></li>
+                                <li><a href="servises/montazh-avtonomnoj-kanalizaczii" title="Монтаж автономной канализации">Монтаж автономной канализации</a></li>
+                                <li><a href="servises/antiseptirovanie-i-pokraska" title="Антисептирование и покраска">Антисептирование и покраска</a></li>
+                                <li class="last"><a href="servises/pomoshh-v-vyibore-i-pokupke-uchastka" title="Помощь в выборе и покупке участка">Помощь в выборе и покупке участка</a></li>
                             </ul>
-                            <ul class="footer_menu">
-                                <li><a href="servises/">Услуги</a>
-                                    <ul><li class="first"><a href="servises/fundamentyi" title="Обустройство фундаментов">Обустройство фундаментов</a></li>
-                <li><a href="servises/otdelka-pomeshheniy" title="Внутренняя отделка">Внутренняя отделка</a></li>
-                <li><a href="servises/krovlya/" title="Кровля">Кровля</a></li>
-                <li><a href="servises/inzhenernyie-kommunikatsii/" title="Инженерные системы">Инженерные системы</a></li>
-                <li><a href="servises/drenaj" title="Обустройство дренажа">Обустройство дренажа</a></li>
-                <li><a href="servises/montazh-avtonomnoj-kanalizaczii" title="Монтаж автономной канализации">Монтаж автономной канализации</a></li>
-                <li><a href="servises/antiseptirovanie-i-pokraska" title="Антисептирование и покраска">Антисептирование и покраска</a></li>
-                <li class="last"><a href="servises/pomoshh-v-vyibore-i-pokupke-uchastka" title="Помощь в выборе и покупке участка">Помощь в выборе и покупке участка</a></li>
-                </ul>
-                                </li>
+                        </li>
+                    </ul>
+                    <ul class="footer_menu">
+                        <li>
+                            <a href="catalog/doma-iz-suxogo-brusa/">Проекты</a>
+                            <ul>
+                                <li class="first"><a href="tags-page/ploshhad/proektyi-domov-do-100-kvadratnyix-metrov" title="Проекты домов до 100 квадратных метров">Дома до 100 м<sup>2</sup></a></li>
+                                <li><a href="tags-page/ploshhad/proektyi-domov-do-150-kvadratnyix-metrov" title="Проекты домов от 100 до 150 квадратных метров">Дома от 100 до 150 м<sup>2</sup></a></li>
+                                <li class="last"><a href="tags-page/ploshhad/proektyi-domov-ot-150-do-200-kvadratnyix-metrov" title="Проекты домов от 150 до 200 квадратных метров">Дома от 150 до 200 м<sup>2</sup></a></li>
                             </ul>
-                            <ul class="footer_menu">
-                                <li><a href="catalog/doma-iz-suxogo-brusa/">Проекты</a>
-                                     <ul><li class="first"><a href="tags-page/ploshhad/proektyi-domov-do-100-kvadratnyix-metrov" title="Проекты домов до 100 квадратных метров">Дома до 100 м<sup>2</sup></a></li>
-                <li><a href="tags-page/ploshhad/proektyi-domov-do-150-kvadratnyix-metrov" title="Проекты домов от 100 до 150 квадратных метров">Дома от 100 до 150 м<sup>2</sup></a></li>
-                <li class="last"><a href="tags-page/ploshhad/proektyi-domov-ot-150-do-200-kvadratnyix-metrov" title="Проекты домов от 150 до 200 квадратных метров">Дома от 150 до 200 м<sup>2</sup></a></li>
-                </ul>
-                                    
-                                </li>
+                        </li>
+                    </ul>
+                    <ul class="footer_menu">
+                        <li><a href="portfolio/">Портфолио</a>
+                            <ul>
+                                <li><a href="#">Построенные дома</a></li>
+                                <li><a href="#">Этапы строительства</a></li>
+                                <li><a href="#">Отделка</a></li>
+                                <li><a href="#">Фотоотчеты</a></li>
                             </ul>
-                            <ul class="footer_menu">
-                                <li><a href="portfolio/">Портфолио</a>
-                                    <ul>
-                                        <li><a href="#">Построенные дома</a></li>
-                                        <li><a href="#">Этапы строительства</a></li>
-                                        <li><a href="#">Отделка</a></li>
-                                        <li><a href="#">Фотоотчеты</a></li>
-                                    </ul>
-                                </li>
-                            </ul>
-                            <ul class="footer_menu">
-                                <li><a href="o-nas/">О нас</a></li>
-                                <li><a href="contacts/">Контакты</a></li>
-                                <li><a href="o-nas/replays/">Отзывы</a></li>
-                            </ul>
-                        </div>
-                        <div class="footer_bottom">
-                            <div class="fb_right">
-                                <div class="item"><a href="#" class="order_button do_order styler tour_button green_border">Заявка на расчет дома</a></div>
-                                <div class="item big strong phone"><a href="tel:+74955801204">+7 495 580 12 04</a></div>
-                                
-                            </div>
-                            <div class="fb_left">
-                                <div class="item"><img src="assets/templates/into/img/footer_logo.png" alt=""></div>
-                                <div class="item copyr">© 2022 000 Стройкомплект-С<br>строительство загородных домов</div>
-                                <div class="item" style="margin-top:30px;">
-                                        <a href="https://www.instagram.com/komstroy/" target="_blank" rel="nofollow" class="social_icon instagram" title="ООО Стройкомплект-С в Инстаграмм"></a> 
-                                        <a href="https://vk.com/komstroys" target="_blank" rel="nofollow" class="social_icon vk" title="ООО Стройкомплект-С в Вконтакте"></a> 
-                                        <a href="https://zen.yandex.ru/komstroy" target="_blank" rel="nofollow" class="social_icon dzen" title="ООО Стройкомплект-С в Яндекс Дзен"></a> 
-                                        <a href="https://wa.me/79175813614" target="_blank" rel="nofollow" class="social_icon whatsapp" title="Написать нам в Whatsapp"></a>
-                                        <a href="https://t.me/komstroys" target="_blank" rel="nofollow" class="social_icon telegram" title="Написать нам в Telegram"></a>
-                                        <a href="https://lesstroy.net/user/9904/" rel="nofollow" target="_blank" class="social_icon">
-                                            <img src="assets/templates/into/images/lesstroy_100x100_circle_bw.png" width="50px" height="50px" alt="Lesstroy.net — сервис по выбору проектов и подрядчиков" title="Lesstroy.net — сервис по выбору проектов и подрядчиков" border="0"></a>
-                                    </div>
-                                
-                            </div>
-                            <div class="clear"></div>
-                            <div style="margin:20px auto; text-align:center;"><iframe src="https://yandex.ru/sprav/widget/rating-badge/104301506125" width="150" height="50" frameborder="0"></iframe></div>
+                        </li>
+                    </ul>
+                    <ul class="footer_menu">
+                        <li><a href="o-nas/">О нас</a></li>
+                        <li><a href="contacts/">Контакты</a></li>
+                        <li><a href="o-nas/replays/">Отзывы</a></li>
+                    </ul>
+                </div>
+                <div class="footer_bottom">
+                    <div class="fb_right">
+                        <div class="item"><a href="#" class="order_button do_order styler tour_button green_border">Заявка на расчет дома</a></div>
+                        <div class="item big strong phone"><a href="tel:+74955801204">+7 495 580 12 04</a></div>
+                    </div>
+                    <div class="fb_left">
+                        <div class="item"><img src="assets/templates/into/img/footer_logo.png" alt=""></div>
+                        <div class="item copyr">© 2022 000 Стройкомплект-С<br>строительство загородных домов</div>
+                        <div class="item" style="margin-top:30px;">
+                            <a href="https://www.instagram.com/komstroy/" target="_blank" rel="nofollow" class="social_icon instagram" title="ООО Стройкомплект-С в Инстаграмм"></a> 
+                            <a href="https://vk.com/komstroys" target="_blank" rel="nofollow" class="social_icon vk" title="ООО Стройкомплект-С в Вконтакте"></a> 
+                            <a href="https://zen.yandex.ru/komstroy" target="_blank" rel="nofollow" class="social_icon dzen" title="ООО Стройкомплект-С в Яндекс Дзен"></a> 
+                            <a href="https://wa.me/79175813614" target="_blank" rel="nofollow" class="social_icon whatsapp" title="Написать нам в Whatsapp"></a>
+                            <a href="https://t.me/komstroys" target="_blank" rel="nofollow" class="social_icon telegram" title="Написать нам в Telegram"></a>
+                            <a href="https://lesstroy.net/user/9904/" rel="nofollow" target="_blank" class="social_icon">
+                                <img src="assets/templates/into/images/lesstroy_100x100_circle_bw.png" width="50px" height="50px" alt="Lesstroy.net — сервис по выбору проектов и подрядчиков" title="Lesstroy.net — сервис по выбору проектов и подрядчиков" border="0">
+                            </a>
                         </div>
                     </div>
-                    
-                </footer>
+                    <div class="clear"></div>
+                    <div style="margin:20px auto; text-align:center;"><iframe src="https://yandex.ru/sprav/widget/rating-badge/104301506125" width="150" height="50" frameborder="0"></iframe></div>
                 </div>
             </div>
-        </footer>         -->
+        </footer>
         <script src="./dist/js/main.js"></script>        
     </body>
 </html>

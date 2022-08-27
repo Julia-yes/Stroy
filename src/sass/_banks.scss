@@ -6,20 +6,42 @@
         font-size: 20px;
         line-height: 24px;
         text-align: center;
-        padding: 30px 120px 50px 120px;
+        padding: 50px 120px 15px 120px;
     }
 
-    &__detailed {
-        padding: 0;
+    &__detailed-wrapper {
         padding-top: 20px;
-        margin-bottom: 25px;
-        background-color: transparent;
-        border: none;
-        font-family: 'Lato';
+        margin-bottom: 25px; 
+    }
+
+    a {
+        padding: 0;
+        font-family: 'Lato', sans-serif;
         font-weight: 400;
         font-size: 16px;
         line-height: 19px;
-        border-bottom: 1px solid variables.$border-color;
+        cursor: pointer;
+        position: relative;
+        color: black;
+        text-decoration: none;
+
+        &:after { 
+            content: "";
+            position: absolute;
+            bottom: -2px;
+            left: 0;
+            display: block;
+            background: none repeat scroll 0 0 transparent;
+            height: 1px;
+            width: 100%;
+            background: variables.$border-color;;
+            transition: width 0.3s ease 0s, left 0.3s ease 0s;
+        }
+            
+        &:hover::after { 
+            width: 0; 
+            left: 50%; 
+        }
 
     }
 
@@ -51,6 +73,15 @@
 
         &__detailed-wrapper {
             text-align: center;
+        }
+    }
+}
+
+@media screen and (max-width: 428px) {
+    .banks {
+
+        &__detailed {
+            font-size: 12px;
         }
     }
 }

@@ -13,7 +13,7 @@ header {
     margin-bottom: 25px;
     position: relative;
     box-sizing: border-box;
-    
+    z-index: 15;
 
     &__right-part {
         display: flex;
@@ -28,7 +28,6 @@ header {
         position: fixed;
         left: 0;
         top: 0;
-        z-index: 10;
         right: 0;
         padding: 25px 25px 15px 25px;
         background-color: white;
@@ -54,6 +53,9 @@ header {
         align-items: flex-start;
         padding: 15px;
 
+        &__btn {
+            max-width: 140px;
+        }
     }
 
 }
