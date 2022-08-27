@@ -29,7 +29,6 @@
             text-align: end;
         }
     }
-
 }
 
 .project {
@@ -78,12 +77,11 @@
         &__button {
             margin-right: 85px;
         }
-
     }
+
     .project {
         
-        &__img {
-    
+        &__img {    
             width: 260px;
             height: 260px;
         }
@@ -126,8 +124,7 @@
     
     .project {
         
-        &__img {
-    
+        &__img {    
             width: 265px;
             height: 265px;
         }
@@ -156,7 +153,6 @@
             padding: 10px;
             font-size: 14px;
         }
-
     }
     
     .project {
@@ -175,9 +171,7 @@
         &__price {           
             top: 25px;
             right: -30px;
-        }
-
-        
+        }        
     }
 }
 

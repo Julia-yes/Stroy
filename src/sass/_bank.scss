@@ -1,6 +1,3 @@
-@use '_variables';
-
-
 .bank {
     &__content {
         display: flex;
@@ -11,9 +8,7 @@
 
     &__img {
         width: 120px;
-        height: 100px;
-        
-        
+        height: 100px;  
     }
 
     &__main-information {
@@ -39,15 +34,14 @@
         .bank__list {
             margin: 0;
             padding: 0;
-        }
-        
+        }        
     }
 }
 
 @media screen and (max-width: 992px) {
     .bank {
-        &__main-information {
-            
+
+        &__main-information {            
             font-size: 14px;
             line-height: 28px;
         }

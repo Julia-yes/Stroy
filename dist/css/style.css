@@ -547,16 +547,6 @@ header {
   margin-top: 5px;
 }
 
-.banner:hover + .arrow__top::after {
-  left: 0;
-  transition-delay: 0.15s;
-}
-
-.banner:hover + .arrow__bottom::after {
-  right: 0;
-  transition-delay: 0s;
-}
-
 @media screen and (max-width: 768px) {
   .banner {
     height: 835px;

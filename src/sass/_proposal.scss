@@ -23,6 +23,7 @@
     }
       
     &__button {
+
         &.nav-link {
             width: 110px;
             height: 110px;
@@ -43,16 +44,16 @@
     
         &.active {
             background-color: transparent;
+
             &.nav-link {
                 background-color: transparent;
-
                 transform: scale(1.3, 1.3);
                 border-color: variables.$border-color;
+                
                 .proposal__button-text{
                     color: black;
                 }
-            }
-    
+            }    
         }    
     
         &-img {
@@ -68,8 +69,7 @@
             line-height: 29px;
             color: rgba(0, 0, 0, 0.25);
             font-family: "Inter";
-            transition: color 0.3s;
-            
+            transition: color 0.3s;            
         }
     }
 }
@@ -81,7 +81,6 @@
             width: 712px;
             padding-left: 65px;
         }
-
     }
 }
 
@@ -95,13 +94,10 @@
 }
 
 @media screen and (max-width: 768px) {
-    .proposal{
-        
+    .proposal{        
         &__buttons {
-            width: 550px;
-            
+            width: 550px;            
         }
-
     }
 }
 
@@ -116,17 +112,17 @@
             justify-content: flex-start;
             align-items: flex-start;
             padding: 0;
-            padding-bottom: 40px;
-            
+            padding-bottom: 40px;            
         }
 
         &__button {
+
             &.nav-link {
-            transition: none;
+                transition: none;
             }
+
             &-wrapper {
                 flex-grow: 0;
-
             }
 
             &.nav-link {
@@ -141,14 +137,13 @@
             }
         
             &.active {
+
                 &.nav-link {
                     transform: scale(2, 2);  
                     position: absolute;
                     left: -140px;
                     top: 60px
-
-                }
-        
+                }        
             }    
         
             &-img {
@@ -161,15 +156,16 @@
                 line-height: 18px;                
             }
         }
-
     }
 }
 
 @media screen and (max-width: 428px) {
-    .proposal{        
+    .proposal{     
+
         &__content {
             padding-left: 15px;
         }
+
         &__button {
 
             &.nav-link {                
@@ -177,13 +173,12 @@
             }
 
             &.active {
+
                 &.nav-link {
                     left: -125px;
                     top: 40px
-                }
-        
+                }        
             }  
-
         }
     }
 }

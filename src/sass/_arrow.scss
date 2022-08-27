@@ -29,6 +29,7 @@
         position: absolute;    
         width: 20px;
     }
+
     &__top {
         transform: rotate(30deg);
         transform-origin: bottom right;
@@ -40,6 +41,7 @@
             transition-delay: 0s;
         }
     }
+
     &__bottom {
         transform: rotate(150deg);
         transform-origin: top right;
@@ -51,6 +53,7 @@
             transition-delay: 0.15s;
         }
     }
+
     &__top::after, 
     &__bottom::after {
         background: variables.$border-color_dark;
@@ -60,7 +63,6 @@
         top: 0;
         transition: all 0.15s;
     }
-
 }
 
 @media screen and (max-width: 768px) {

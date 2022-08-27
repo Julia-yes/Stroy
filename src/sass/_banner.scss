@@ -8,9 +8,7 @@
     background-size: cover;
     background-position: center;
     color: white;   
-    position: relative;
-
-    
+    position: relative;    
 
     &__content  {
         position: relative;
@@ -19,7 +17,6 @@
         padding-left: 70px;
     }
     
-
     &__label {
         font-family: 'Montserrat', sans-serif;
         font-weight: 600;
@@ -37,17 +34,6 @@
         background-color: variables.$border-color;
         margin-top: 5px;
     }
-
-}
-
-.banner:hover + .arrow__top::after {
-    left: 0;
-    transition-delay: 0.15s;
-}
-
-.banner:hover + .arrow__bottom::after {
-    right: 0;
-    transition-delay: 0s;
 }
 
 @media screen and (max-width: 768px) {
@@ -80,19 +66,17 @@
 @media screen and (max-width: 428px) {
     .banner {
         &__content {            
-            width: 300px;            
-            
+            width: 300px;     
         }
 
         &__label {
             font-size: 30px;
             line-height: 1.4;
         } 
+
         &__border {            
             width: 250px;            
-        }
-
-        
+        }        
     }      
 }
 
